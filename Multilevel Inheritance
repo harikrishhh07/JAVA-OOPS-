@@ -1,0 +1,29 @@
+class Mufasa {
+    void king() {
+        System.out.println("Brave");
+        System.out.println("Leadership");
+        System.out.println("Strong");
+    }
+}
+class Simba extends Mufasa{
+    Simba(){
+        king();
+    }
+    void prince(){
+        System.out.println("not yet ready to be a king");
+    }
+}
+class Youngsimba extends Simba{
+    Youngsimba(){
+        prince();
+    }
+    void futureprince(){
+        System.out.println("Just now borned");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Youngsimba futureprince = new Youngsimba();
+        futureprince.futureprince(); 
+    }
+}
