@@ -1,0 +1,28 @@
+interface Father {
+    void qualitiesOfFather();
+}
+
+interface Mother {
+    void qualitiesOfMother();
+}
+
+class Child implements Father, Mother {
+    public void qualitiesOfFather() {
+        System.out.println("Father: Brave and Strong");
+    }
+    public void qualitiesOfMother() {
+        System.out.println("Mother: Caring and Protective");
+    }
+    void ownQuality() {
+        System.out.println("Child: Curious and Energetic");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.qualitiesOfFather();
+        c.qualitiesOfMother();
+        c.ownQuality();
+    }
+}
