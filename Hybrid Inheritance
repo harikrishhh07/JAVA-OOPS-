@@ -1,0 +1,36 @@
+class GrandParent {
+    void wisdom() {
+        System.out.println("GrandParent: Wise and Experienced");
+    }
+}
+
+interface Father {
+    void qualitiesOfFather();
+}
+
+interface Mother {
+    void qualitiesOfMother();
+}
+s
+class Child extends GrandParent implements Father, Mother {
+    public void qualitiesOfFather() {
+        System.out.println("Father: Brave and Strong");
+    }
+
+    public void qualitiesOfMother() {
+        System.out.println("Mother: Caring and Loving");
+    }
+
+    void ownQuality() {
+        System.out.println("Child: Curious and Energetic");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Child c = new Child();
+        c.wisdom();             
+        c.qualitiesOfFather();   
+        c.qualitiesOfMother();   
+        c.ownQuality();         
+    }
+}
